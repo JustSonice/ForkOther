@@ -53,12 +53,14 @@ public class Main {
 
                 if (isOnSale) {
                     System.out.println("\t" + products[i] + " " + counts[i] + " шт. за " + (prices[i] * (counts[i] / 3 * 2 + counts[i] % 3)) + " руб. (распродажа!)");
+                    System.out.println("Итого: " + (prices[i] * (counts[i] / 3 * 2 + counts[i] % 3)) + " руб.");
                 } else {
                     System.out.println("\t" + products[i] + " " + counts[i] + " шт. за " + (prices[i] * counts[i]) + " руб.");
+                    System.out.println("Итого: " + sum + " руб.");
+
                 }
             }
         }
-        System.out.println("Итого: " + sum + " руб.");
     }
 
 }
